@@ -135,6 +135,11 @@ body {
     }
   }
 
+  img {
+    margin: auto;
+    display: block;
+  }
+
   a:not(.btn) {
     &:hover {
       text-decoration: underline;
