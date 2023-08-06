@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "프로세스와 쓰레드의 차이는?"
-categories: Computer_Science
+categories: Computer-Science
 tag: [Java]
 author_profile: false
 sidebar:
