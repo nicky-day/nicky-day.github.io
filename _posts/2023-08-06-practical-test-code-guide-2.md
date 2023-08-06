@@ -20,7 +20,7 @@ use_math: false
 
 
 
-![스크린샷 2023-08-06 오후 1.38.09]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/스크린샷 2023-08-06 오후 1.38.09.png)
+![Test_05-1]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/Test_05-1.png)
 
 
 
@@ -57,11 +57,11 @@ Layered Architecture
 
 
 
-![스크린샷 2023-08-06 오후 1.53.13]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/스크린샷 2023-08-06 오후 1.53.13.png)
+![Test_05-2]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/Test_05-2.png)
 
-![스크린샷 2023-08-06 오후 1.49.08]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/스크린샷 2023-08-06 오후 1.49.08.png)
+![Test_05-3]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/Test_05-3.png)
 
-![스크린샷 2023-08-06 오후 1.54.23]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/스크린샷 2023-08-06 오후 1.54.23.png)
+![Test_05-4]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/Test_05-4.png)
 
 Spring에서 각 Layer별로 일반적으로 다음 어노테이션을 클래스 상단에 붙이거나 객체를 사용한다.
 
@@ -180,7 +180,7 @@ void sendMail() {
 
 Mock은 외부 세계에 영향을 주는 코드가 포함된 기능을 검증할 때 외부 시스템이 잘 동작할 것이라고 가정할 때 사용하면 좋다.
 
-![스크린샷 2023-08-06 오후 2.41.36]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/스크린샷 2023-08-06 오후 2.41.36.png)
+![Test_06-1]({{site.url}}/images/2023-08-06-practical-test-code-guide-2/Test_06-1.png)
 
 참고
 
