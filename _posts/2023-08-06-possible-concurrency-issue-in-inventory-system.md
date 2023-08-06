@@ -246,7 +246,7 @@ Redis
 - 동시성 이슈를 테스트할 때 ExecutorService와 CountDownLatch를 사용하면 편리하다.
 - Exclusive Lock(배타적 잠금), Shard Lock(공유 잠금)의 차이
 - JPA의 LockModeType
-- https://techblog.woowahan.com/2631/
+- [https://techblog.woowahan.com/2631/](https://techblog.woowahan.com/2631/)
 
 
 
