@@ -118,7 +118,8 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    // font-size: 1em;
+    font-size: $post-font-size
   }
 
   /* paragraph indents */
