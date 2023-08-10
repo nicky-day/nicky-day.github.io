@@ -21,8 +21,8 @@ SameSite가 None으로 설정될 경우 모든 도메인에서 쿠키를 전송�
 Cookie의 SameSite 속성은 서로 다른 도메인 간의 쿠키 전송에 대한 보안을 설정한다.
 
 >
-> A cookie with **"SameSite=Strict"** will only be sent with a same-site request. 
-> A cookie with **"SameSite=Lax"** will be sent with a same-site request, or a cross-site top-level navigation with a "safe" HTTP method. 
+> A cookie with **"SameSite=Strict"** will only be sent with a same-site request.
+> A cookie with **"SameSite=Lax"** will be sent with a same-site request, or a cross-site top-level navigation with a "safe" HTTP method.
 > A cookie with **"SameSite=None"** will be sent with both same-site and cross-site requests.
 
 - "None"은 동일 사이트와 크로스 사이트 모두에 쿠키 전송이 가능하다. Chrome80버전부터 SameSite를 None으로 설정할 경우 쿠키에 암호화된 HTTPS 연결이 필요함을 나타내는 Secure 속성을 태깅해야 한다.(SameSite=None; Secure) 즉, URL은 HTTPS로 처리되어야 한다.
@@ -32,14 +32,19 @@ Cookie의 SameSite 속성은 서로 다른 도메인 간의 쿠키 전송에 대
 ### 3. Lax에서 쿠키를 전송하는 경우
 
 - a href 링크
+
 ```html
 <a href=""></a>
 ```
+
 - prerender 링크
+
 ```html
 <link rel="prerender" href=".."/>
 ```
+
 - HTTP GET 메소드
+
 ```html
 <form method="GET" action="...">
 ```
@@ -47,18 +52,25 @@ Cookie의 SameSite 속성은 서로 다른 도메인 간의 쿠키 전송에 대
 Lax에서 쿠키를 전송하지 않는 경우
 
 - HTTP POST 메소드
+
 ```html
 <form method="POST" action="...">
 ```
+
 - iframe
+
 ```html
 <iframe src="..."></iframe>
 ```
+
 - Ajax
+
 ```html
 $.get("...")
 ```
+
 - Image
+
 ```html
 <img src="...">
 ```
@@ -109,7 +121,7 @@ public class CookieAttributeFilter implements Filter{
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException){
     
-    	HttpServletResponse httpServletResponse = (HttpServletResponse) response;
+     HttpServletResponse httpServletResponse = (HttpServletResponse) response;
         chain.doFilter(request, response);
         log.info("CookieAttributeFilter");
         addSameSite(HttpServletResponse, "None");
@@ -125,11 +137,11 @@ public class CookieAttributeFilter implements Filter{
     }
     
     private void addSameSite(HttpServletResponse response, String sameSite){    
-    	Collection<String> headers = response.getHeaders(httpHeaders.SET_COOKIE);
+     Collection<String> headers = response.getHeaders(httpHeaders.SET_COOKIE);
         boolean firstHeader = true;
         for(String header : headers){
             if(firstHeader){
-            	response.setHeader(httpHeader.SET_COOKIE, String.format("%s; Secure; %s", header, "SameSite=" + sameSite));
+             response.setHeader(httpHeader.SET_COOKIE, String.format("%s; Secure; %s", header, "SameSite=" + sameSite));
                 firstHeader = false;
                 continue;
             }
@@ -144,6 +156,7 @@ public class CookieAttributeFilter implements Filter{
 Tomcat에서 지원하는 Cookie Processor Component를 이용하여 일괄로 쿠키에 대한 속성을 추가할 수 있다.
 
 - context.xml
+
 ```xml
 <context>
   ...
@@ -157,18 +170,17 @@ Apache 또는 Nginx와 같은 Http 웹서버나 Proxy 서버를 사용 중이라
 
 - Apache Configuration (httpd.conf)
 
-```
+```conf
 Header always edit Set-Cookie (.*) "$1; Secure; SameSite=None;"
 ```
 
 - Nginx Configuration (nginx.conf)
 
-```
+```conf
 location / { 
     # your usual config ... 
     # hack, set all cookies to secure, httponly and samesite (strict or lax) 
     proxy_cookie_path / "/; secure; SameSite=None"; }
-
 ```
 
 ### 5. CSRF(Cross-Site Request Forgery) : 사이트 간 요청 위조
@@ -182,8 +194,8 @@ location / {
 1. 이용자는 웹사이트에 로그인하여 정상적인 쿠키를 발급받는다.
 2. 공격자는 다음과 같은 링크를 이메일이나 게시판 등의 경로를 통해 이용자에게 전달한다.
 
-	http://www.geocitites.com/attacker
-   
+ <http://www.geocitites.com/attacker>
+
 3. 공격용 HTML 페이지는 다음과 같은 이미지태그를 가진다.
 
 ```html
@@ -196,8 +208,8 @@ location / {
 
 5. 이용자의 승인이나 인지 없이 출발지와 도착지가 등록됨으로써 공격이 완료된다. 해당 서비스 페이지는 등록 과정에 대해 단순히 쿠키를 통한 본인확인밖에 하지 않으므로 공격자가 정상적인 이용자의 수정이 가능하게 된다.
 
-
 참고
-- https://ifuwanna.tistory.com/223
-- https://sevendollars.tistory.com/178
-- https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%ED%8A%B8_%EA%B0%84_%EC%9A%94%EC%B2%AD_%EC%9C%84%EC%A1%B0
+
+- <https://ifuwanna.tistory.com/223>
+- <https://sevendollars.tistory.com/178>
+- <https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%ED%8A%B8_%EA%B0%84_%EC%9A%94%EC%B2%AD_%EC%9C%84%EC%A1%B0>
