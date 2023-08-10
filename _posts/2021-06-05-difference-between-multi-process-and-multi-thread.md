@@ -10,7 +10,6 @@ search: true
 use_math: false
 ---
 
-
 ### 1. T 메모리
 
 ![multi-process-and-multi-thread-1]({{site.url}}/images/2021-06-05-difference-between-multi-process-and-multi-thread/images_jsj3282_post_331c2501-a1b8-4acb-b6bd-d95150861dcf_9951443D5C6E85BE02.png)

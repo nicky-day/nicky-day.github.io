@@ -10,8 +10,6 @@ search: true
 use_math: false
 ---
 
-
-
 ## 7. 더 나은 테스트 코드 작성법
 
 - 한 문단에 한 주제
