@@ -10,8 +10,6 @@ search: true
 use_math: false
 ---
 
-
-
 ## 0. 선착순 이벤트 시스템에서 발생할 수 있는 동시성 이슈
 
 

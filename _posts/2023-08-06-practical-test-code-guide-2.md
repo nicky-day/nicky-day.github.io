@@ -10,8 +10,6 @@ search: true
 use_math: false
 ---
 
-
-
 ## 5. Spring & JPA 기반 테스트
 
 
