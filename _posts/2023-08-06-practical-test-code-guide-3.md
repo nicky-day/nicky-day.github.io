@@ -12,6 +12,8 @@ use_math: false
 
 ## 7. 더 나은 테스트 코드 작성법
 
+### 구체적 조언
+
 - 한 문단에 한 주제
   - 한 가지 테스트에서는 한 가지 목적의 검증만 수행해야 한다. 즉, DisplayName을 한 문장으로 구성할 수 있어야 한다. 또한 반복문이나 논리문같은 논리구조가 들어가지 않은 형태로 구성하는 것이 좋다.
 - 완벽하게 제어하기
@@ -30,13 +32,11 @@ use_math: false
 - Private 메소드를 테스트하고 싶어진다면 객체 분리의 신호임을 의심해라.
 - 프로덕션에는 필요 없는데 테스트에만 필요한 메서드가 있다면(ex : Request의 Builder) 만들어도 좋지만 보수적으로 접근해야 한다.
 
-
-
-@Parameterized Test 
+### @Parameterized Test 
 
 한 개의 메소드에 대해 여러 개의 테스트를 수행해야 하는 경우에 사용한다. 하나의 테스트 메소드로 여러 가지 파라미터에 대해 테스트할 수 있다.
 
-https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests
+[https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests)
 
 ```java
 @DisplayName("상품 타입이 재고 타입인지를 체크한다.")
@@ -70,9 +70,7 @@ void containsStockType5(ProductType productType, boolean expected) {
 }
 ```
 
-
-
-@DynamicTest
+### @DynamicTest
 
 어떤 환경을 설정해주고 환경을 공유하면서 시나리오를 테스트해보고 싶을 때 사용할 수 있다. Runtime 중에 생성되는 동적 테스트이며, given 안에서 when이 연속적으로 이루어지는 형태를 가진다.
 
@@ -110,13 +108,11 @@ Collection<DynamicTest> multiMapLearningTest() {
 }      
 ```
 
+### Spring REST Docs
 
+[https://docs.spring.io/spring-restdocs/docs/current/reference/htmlsingle/](https://docs.spring.io/spring-restdocs/docs/current/reference/htmlsingle/)
 
-Spring REST Docs
-
-https://docs.spring.io/spring-restdocs/docs/current/reference/htmlsingle/
-
-https://asciidoctor.org/
+[https://asciidoctor.org/](https://asciidoctor.org/)
 
 - 테스트 코드를 통한 API 문서 자동화 도구
 - API 명세를 문서로 만들고 외부에 제공함으로써 협업을 원활하게 한다.
@@ -124,13 +120,11 @@ https://asciidoctor.org/
 - Swagger와는 다르게 프로덕션 코드에 비침투적이다.
 
 
+### RestAssured
 
-RestAssured
-
-https://rest-assured.io/
+[https://rest-assured.io/](https://rest-assured.io/)
 
 - 일반적으로 인수테스트(혹은 End-To-End 테스트) 용도로 사용하는 테스트 라이브러리이다..
-
 
 
 참고
