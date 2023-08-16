@@ -80,7 +80,7 @@ use_math: false
 
     이전 포스팅에서 생성한 Public Subnet 2개에 다음과 같은 태그를 달아준다.
 
-    ![](https://images.velog.io/images/jsj3282/post/22ef980e-26af-453f-b4cc-b673e85f6508/%EC%82%AC%EC%A7%8442.png)
+    ![EKS-32]({{site.url}}/images/2021-10-28-eks-cluster-and-alb-ingress-controller-and-cicd-2/images_jsj3282_post_22ef980e-26af-453f-b4cc-b673e85f6508_사진42.png)
 
 2. 인증서 구성을 웹훅에 삽입할 수 있도록 cert-manager를 설치
 
@@ -211,9 +211,9 @@ use_math: false
 
     여기까지 완료하면 다음과 같은 화면이 보인다.
 
-    ![EKS-32]({{site.url}}/images/2021-10-28-eks-cluster-and-alb-ingress-controller-and-cicd-2/images_jsj3282_post_a2bf89e6-fe02-4d7a-a338-5efb9af207b8_사진44.png)
+    ![EKS-33]({{site.url}}/images/2021-10-28-eks-cluster-and-alb-ingress-controller-and-cicd-2/images_jsj3282_post_a2bf89e6-fe02-4d7a-a338-5efb9af207b8_사진44.png)
 
-    ![EKS-33]({{site.url}}/images/2021-10-28-eks-cluster-and-alb-ingress-controller-and-cicd-2/images_jsj3282_post_b17b3495-dced-4cef-a10f-4e05f296c142_사진45.png)
+    ![EKS-34]({{site.url}}/images/2021-10-28-eks-cluster-and-alb-ingress-controller-and-cicd-2/images_jsj3282_post_b17b3495-dced-4cef-a10f-4e05f296c142_사진45.png)
 
 참고
 - [https://aws.amazon.com/ko/premiumsupport/knowledge-center/eks-alb-ingress-controller-setup/](https://aws.amazon.com/ko/premiumsupport/knowledge-center/eks-alb-ingress-controller-setup/)
