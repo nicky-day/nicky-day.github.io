@@ -145,10 +145,10 @@ phases:
       - kubectl apply -f ./eks-app-deploy.yml
 ```
 
-install : 실행 환경 지정 및 kubectl 설치, .kubeconfig 구성
-pre_build : Docker ECR 저장소 로그인
-build : 빌드 작업 수행, Docker Build(이미지 생성) 및 태그 지정, ECR Push(이미지 업로드)
-post_build : EKS 배포 수행
+- install : 실행 환경 지정 및 kubectl 설치, .kubeconfig 구성
+- pre_build : Docker ECR 저장소 로그인
+- build : 빌드 작업 수행, Docker Build(이미지 생성) 및 태그 지정, ECR Push(이미지 업로드)
+- post_build : EKS 배포 수행
 
 
 Dockerfile
