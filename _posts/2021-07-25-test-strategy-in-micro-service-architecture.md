@@ -95,4 +95,4 @@ use_math: false
 ![MSA_Test-9]({{site.url}}/images/2021-07-25-test-strategy-in-micro-service-architecture/images_jsj3282_post_b86f0439-b19c-443b-9f1d-cf00685c1ecb_제목 없음3.png)
 
 참고
-- https://martinfowler.com/articles/microservice-testing/
+- [https://martinfowler.com/articles/microservice-testing/](https://martinfowler.com/articles/microservice-testing/)
