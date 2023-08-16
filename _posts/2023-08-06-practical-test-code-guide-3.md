@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "테스트 코드는 왜 필요하고 어떻게 작성해야 하는가?(3)"
-categories: Test-Code
+categories: Test
 tag: [JUnit5, TDD, Mockito]
 author_profile: false
 sidebar:
