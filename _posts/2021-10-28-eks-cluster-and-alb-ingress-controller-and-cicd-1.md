@@ -10,8 +10,6 @@ search: true
 use_math: false
 ---
 
-# EKS Cluster 생성  + ALB Ingress Controller + CI/CD(1)
-
 ## 1. EKS Cluster 생성
 
 ### 1) EKS 클러스터 IAM User 생성
@@ -217,11 +215,11 @@ EKS Cluster에서 구성 -> 컴퓨팅 -> 노드 그룹 추가를 선택합니다
 
 퍼블릭 서브넷 중 하나를 선택해서 EC2를 생성합니다.
 
-[https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/sec-group-reqs.html](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/sec-group-reqs.html) 에서 볼 수 있듯이 EKS 클러스터 보안그룹에 MGMT EC2에서 접근 가능하도록 다음 인바운드 규칙을 추가해줍니다.
+[https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/sec-group-reqs.html](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/sec-group-reqs.html) 에서 볼 수 있듯이 EKS 클러스터 보안그룹에 MGMT EC2에서 접근 가능하도록 다음 인바운드 규칙을 추가해준다.
 
 ![EKS-31]({{site.url}}/images/2021-10-28-eks-cluster-and-alb-ingress-controller-and-cicd-1/images_jsj3282_post_e1fb8619-ee25-4bd2-8fa9-be0f64e5343d_사진40.png)
 
-EC2 서버에 접속해 다음과 같은 설정을 해줍니다.
+EC2 서버에 접속해 다음과 같은 설정을 해준다.
 
 ```shell
 # 1. kubectl 설치
