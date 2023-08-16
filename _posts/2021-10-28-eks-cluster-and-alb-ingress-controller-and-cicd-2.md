@@ -129,7 +129,7 @@ use_math: false
     kubectl apply -f ingress-controller.yaml
     ```
 
-### 5) EKS Ingress 생성
+### 4) EKS Ingress 생성
 
 1. NodePort, Deployment를 배포한다.
 
