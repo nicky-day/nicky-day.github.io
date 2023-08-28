@@ -351,6 +351,10 @@ use_math: false
     <td>⇧ + F6</td>
   </tr>
   <tr>
+  	<td>시그니처 일괄 변경하기</td>
+    <td>⌘ + F6</td>
+  </tr>
+  <tr>
   	<td>타입 일괄 변경하기</td>
     <td>⌘⇧ + F6</td>
   </tr>
