@@ -139,6 +139,10 @@ use_math: false
 		<td>라인 시작/끝 이동</td>
     <td>fn + ← →</td>
 	</tr>
+  <tr>
+    <td>코드 전체 선택</td>
+    <td>⌘ + A</td>
+	</tr>
 	<tr>
     <td>라인 전체 선택</td>
     <td>⇧⌘ + ← → 또는 Fn + ⇧ + ← →</td>
