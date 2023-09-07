@@ -116,6 +116,10 @@ CPU 스케줄링 정보
 
 
 
+<img src="{{site.url}}/images/2023-08-31-os-process-and-thread/99E85E3A5C460F1906.jpeg" alt="process-and-thread-2" width="400px">
+
+
+
 생성 상태
 
 - PCB를 생성하고 메모리의 프로그램 적재를 요청한 상태이다. 
