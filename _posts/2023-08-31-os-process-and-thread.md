@@ -9,8 +9,6 @@ search: true
 use_math: false
 ---
 
-
-
 ## 1. 프로그램과 프로세스
 
 프로그램
