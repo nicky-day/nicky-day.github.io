@@ -10,8 +10,6 @@ search: true
 use_math: false
 ---
 
-
-
 ## 1. 맥북 키보드 아이콘
 
 <table>
