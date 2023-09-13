@@ -63,7 +63,7 @@ use_math: false
 
 
 
-<img src="{{site.url}}/images/2023-09-13-os-process-synchronization/스크린샷 2023-09-13 오후 11.05.26.png" alt="os-process-synchronization-1" width="400px">
+<img src="{{site.url}}/images/2023-09-13-os-process-synchronization/semaphore.png" alt="os-process-synchronization-1" width="400px">
 
 
 
