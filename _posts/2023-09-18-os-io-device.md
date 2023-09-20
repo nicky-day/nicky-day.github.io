@@ -15,7 +15,7 @@ use_math: false
 
 주변 장치들의 내부 구조는 아래와 같다. 
 
-<img src="{{site.url}}/images/2023-09-18-os-io-device/스크린샷 2023-09-20 오후 8.46.42.png" alt="os-io-device-1" width="700px" />
+<img src="{{site.url}}/images/2023-09-18-os-io-device/img2.png" alt="os-io-device-1" width="700px" />
 
 주변 장치들은 메인 보드에 있는 버스로 연결된다. 실제로 하나의 버스는 Address 버스와, Data 버스, Control 버스로 이루어져 있다. 그래서 I/O 디바이스는 이 세 가지 버스를 따로 받을 수 있다. 
 
