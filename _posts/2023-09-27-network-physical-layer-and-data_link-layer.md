@@ -27,7 +27,7 @@ use_math: false
 
 2대 이상의 컴퓨터가 서로 통신하려면 서로를 연결하는 케이블이나 전파가 있어야 한다. 이는 물리적으로 데이터를 전송하는 매체이므로 물리 계층에 해당한다. 케이블은 크게 3가지로 나뉜다. 첫번째는 UTP 케이블, 두번째는 동축 케이블, 세번째는 광 케이블이 있다.
 
-<img src="{{site.url}}/images/2023-09-27-os-physical-layer-and-data_link-layer/다운로드.png" alt="network-physical-and-datalink-1" width="400px" />
+<img src="{{site.url}}/images/2023-09-27-os-physical-layer-and-data_link-layer/cable.png" alt="network-physical-and-datalink-1" width="400px" />
 
 
 
