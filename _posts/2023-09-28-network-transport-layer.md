@@ -19,7 +19,7 @@ use_math: false
 
 
 
-참고 : [http://wiki.hash.kr/index.php/%ED%8F%AC%ED%8A%B8#.ED.8F.AC.ED.8A.B8_.EB.B2.88.ED.98.B8](http://wiki.hash.kr/index.php/%ED%8F%AC%ED%8A%B8#.ED.8F.AC.ED.8A.B8_.EB.B2.88.ED.98.B8)
+참고 : <a href="http://wiki.hash.kr/index.php/포트#.ED.8F.AC.ED.8A.B8_.EB.B2.88.ED.98.B8" target="_blank">http://wiki.hash.kr/index.php/포트#.ED.8F.AC.ED.8A.B8_.EB.B2.88.ED.98.B8</a>
 
 
 

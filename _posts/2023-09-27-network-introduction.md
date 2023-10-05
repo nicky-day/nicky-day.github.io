@@ -19,8 +19,7 @@ use_math: false
 
 **통신 프로토콜** 또는 **통신 규약**은 컴퓨터나 원거리 통신 장비 사이에서 메시지를 주고 받는 양식과 규칙의 체계이다. 통신 프로토콜은 신호 체계, 인증 그리고 오류 감지 및 수정 기능을 포함할 수 있다. 프로토콜은 형식, 의미론, 그리고 통신의 동기 과정 등을 정의하기는 하지만 구현되는 방법은 독립적이다. 이때문에 프로토콜은 하드웨어 또는 소프트웨어 그리고 때로는 모두를 사용하여 구현되기도 한다.
 
-참고 : [https://ko.wikipedia.org/wiki/%ED%86%B5%EC%8B%A0_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C](https://ko.wikipedia.org/wiki/%ED%86%B5%EC%8B%A0_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
-
+참고 : [https://ko.wikipedia.org/wiki/통신_프로토콜](https://ko.wikipedia.org/wiki/통신_프로토콜)
 
 
 ## 3. 네트워크의 역사
